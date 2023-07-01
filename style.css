@@ -13,8 +13,8 @@ body{
 
 h2{
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 14px;
+    letter-spacing: 0.25vw;
+    font-size: 1vw;
     text-align: center;
     color: white;
 }
@@ -22,28 +22,28 @@ h2{
     display: flex;
 }
 .Clock div{
-    margin: 5px;
+    margin: 0.3vw;
     position: relative;
 }
 .Clock span{
-width: 100px;
-height: 80px;
+width: 6.5vw;
+height: 5.5vw;
 background: slateblue;
 opacity: .8;
 color: white;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 50px;
+font-size: 3.1vw;
 text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 
 
 }
 .Clock .text{
-height: 30px;
-font-size: 10px;
+height: 1.75vw;
+font-size: 0.65vw;
 text-transform: uppercase;
-letter-spacing: 2px;
+letter-spacing: 0.1vw;
 background: darkblue;
 opacity: 0.8;
 }
@@ -51,8 +51,14 @@ opacity: 0.8;
 .Clock #ampm{
     bottom: 0;
     position: absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
+    width: 4vw;
+    height: 2vw;
+    font-size: 1.2vw;
     background: green;
+}
+
+@media all and (max-width: 576px) {
+    body{
+        background-image: url("https://images.unsplash.com/photo-1685793579305-635173bb473b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+    }   
 }
